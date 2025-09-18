@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,6 +17,7 @@ namespace BasicThread
             
             Thread thread = Thread.CurrentThread;
                 Console.WriteLine("Name of Thread" + thread.Name + "=" + LoopCount );
+                Thread.Sleep(1500);
 
             }
 
